@@ -1,15 +1,14 @@
 VSTS Agent Docker Image
 ====================
 
-This repository contains `Dockerfile` definitions for [giggio/vsts-agent](https://github.com/giggio/docker-vsts-agent) Docker images.
+This repository contains `Dockerfile` definitions for [julioarruda/vsts-maven](https://github.com/julioarruda/docker-vsts-agent) Docker images.
 
-[![Downloads from Docker Hub](https://img.shields.io/docker/pulls/giggio/vsts-agent.svg)](https://registry.hub.docker.com/u/giggio/vsts-agent)
-[![Stars on Docker Hub](https://img.shields.io/docker/stars/giggio/vsts-agent.svg)](https://registry.hub.docker.com/u/giggio/vsts-agent)
+[![Downloads from Docker Hub](https://img.shields.io/docker/pulls/julioarruda/vsts-maven.svg)](https://registry.hub.docker.com/u/julioarruda/vsts-maven)
+[![Stars on Docker Hub](https://img.shields.io/docker/stars/julioarruda/vsts-maven.svg)](https://registry.hub.docker.com/u/julioarruda/vsts-maven)
 
 ## Supported tags
 
-- [`latest` (*agent/Dockerfile*)](https://github.com/giggio/docker-vsts-agent/blob/master/agent/Dockerfile)
-- [`docker` (*agent-docker/Dockerfile*)](https://github.com/giggio/docker-vsts-agent/blob/master/agent-docker/Dockerfile)
+- [`latest` (*agent/Dockerfile*)]
 
 ## Configuration
 
@@ -38,12 +37,14 @@ docker run --name vsts-agent -ti -e VS_TENANT=$env:VS_TENANT -e AGENT_PAT=$AGENT
 
 ## Maintainers
 
-* [Giovanni Bassi](http://blog.lambda3.com.br/L3/giovannibassi/), aka Giggio, [Lambda3](http://www.lambda3.com.br), [@giovannibassi](https://twitter.com/giovannibassi)
+* [Julio Arruda](http://www.julioarruda.com.br/), \\
 
 ## License
 
 This software is open source, licensed under the Apache License, Version 2.0.
-See [LICENSE.txt](https://github.com/giggio/vsts-agent/blob/master/LICENSE.txt) for details.
+See [LICENSE.txt](https://github.com/julioarruda/vsts-agent/blob/master/LICENSE.txt) for details.
 Check out the terms of the license before you contribute, fork, copy or do anything
 with the code. If you decide to contribute you agree to grant copyright of all your contribution to this project, and agree to
 mention clearly if do not agree to these terms. Your work will be licensed with the project at Apache V2, along the rest of the code.
+
+* based from projet giggio/vsts-agent
