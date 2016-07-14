@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt update && \
-    apt install curl unzip vim apt-transport-https libunwind8 libcurl3 sudo default-jre openjdk-7-jre default-jdk maven -y
+    apt install curl unzip vim apt-transport-https libunwind8 libcurl3 default-jre openjdk-7-jre default-jdk maven sudo -y
 RUN curl -sOSL http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-8ubuntu0.2_amd64.deb && \
     dpkg -i libicu52_52.1-8ubuntu0.2_amd64.deb && \
     rm libicu52_52.1-8ubuntu0.2_amd64.deb
