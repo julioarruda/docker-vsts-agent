@@ -1,7 +1,7 @@
 version: '2'
 services:
   agent:
-    image: giggio/vsts-agent
+    image: julioarruda/vsts-maven
     environment:
       AGENT_PAT:
       AGENT_POOL:
