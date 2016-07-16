@@ -5,10 +5,6 @@ RUN apt update && \
 RUN curl -sOSL http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu52_52.1-8ubuntu0.2_amd64.deb && \
     dpkg -i libicu52_52.1-8ubuntu0.2_amd64.deb && \
     rm libicu52_52.1-8ubuntu0.2_amd64.deb
-RUN echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list && \
-    apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893 && \
-    apt-get update && \
-    apt-get install dotnet-dev-1.0.0-preview2-003121 -y -f
 RUN adduser --disabled-password --gecos '' agentuser && \
     adduser agentuser sudo && \
     echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
