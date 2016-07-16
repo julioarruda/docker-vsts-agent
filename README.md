@@ -26,14 +26,12 @@ For `docker`, you need to set these additional variables:
 On Windows, use Docker for Windows and run, on PowerShell:
 
 ````powershell
-docker run --name vsts-agent -ti -e VS_TENANT=$env:VS_TENANT -e AGENT_PAT=$env:AGENT_PAT -e DOCKER_USERNAME=$env:DOCKER_USERNAME -e DOCKER_PASSWORD=$env:DOCKER_PASSWORD --rm --volume=/var/run/docker.sock:/var/run/docker.sock giggio/vsts-agent:docker
-````
+docker run --name vsts-agent -ti -e VS_TENANT=$env:VS_TENANT -e AGENT_PAT=$env:AGENT_PAT -d julioarruda/vsts-maven````
 
 On a Mac, use Docker for Mac, or directy on Linux, run in bash:
 
 ````bash
-docker run --name vsts-agent -ti -e VS_TENANT=$env:VS_TENANT -e AGENT_PAT=$AGENT_PAT -e DOCKER_USERNAME=$DOCKER_USERNAME -e DOCKER_PASSWORD=$DOCKER_PASSWORD --rm --volume=/var/run/docker.sock:/var/run/docker.sock giggio/vsts-agent:docker
-````
+docker run --name vsts-agent -ti -e VS_TENANT=$VS_TENANT -e AGENT_PAT=$AGENT_PAT -d julioarruda/vsts-maven````
 
 ## Maintainers
 
